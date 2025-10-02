@@ -46,7 +46,9 @@ void selectionSortIntegers(int *array, unsigned int size, int print)
         if(minIndex != i){
             swap(array + i, array + minIndex);
         }
-
+        if(print){
+            printIntArray(array,size);
+        }
 
     }
 }
@@ -88,7 +90,9 @@ void insertionSortIntegers(int *array, unsigned int size, int print)
             }
         }
 
-    
+        if(print){
+            printIntArray(array,size);
+        }
     }
 
 
