@@ -20,21 +20,47 @@ int main(int argc, char *argv[])
     int dataset4[] = {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
     int dataset5[] = {100, 201, 52, 3223, 24, 55, 623, 75, 8523, -9, 150};
     int dataset6[] = {-1, 1, 2, -3, 4, 5, -6, 7, 8, -9, 10};
+    int dataset7[] = {};
 
     int print = 1;
-
+    unsigned int size = 11;
     // Sort our integer array
-    insertionSortIntegers(dataset1, 11, print);
+
+    printIntArray(dataset1, size);
+    insertionSortIntegers(dataset1, size, print);
     printf("\n");
-    insertionSortIntegers(dataset2, 11, print);
+    printIntArray(dataset1, size);
+    printf("========\n");
+    printIntArray(dataset2, size);
+    insertionSortIntegers(dataset2, size, print);
     printf("\n");
-    insertionSortIntegers(dataset3, 11, print);
+    printIntArray(dataset2, size);
+    printf("========\n");
+    printIntArray(dataset3, size);
+    insertionSortIntegers(dataset3, size, print);
     printf("\n");
-    insertionSortIntegers(dataset4, 11, print);
+    printIntArray(dataset3, size);
+    printf("========\n");
+    printIntArray(dataset4, size);
+    insertionSortIntegers(dataset4, size, print);
     printf("\n");
-    insertionSortIntegers(dataset5, 11, print);
+    printIntArray(dataset4, size);
+    printf("========\n");
+    printIntArray(dataset5, size);
+    insertionSortIntegers(dataset5, size, print);
     printf("\n");
-    insertionSortIntegers(dataset6, 11, print);
+    printIntArray(dataset5, size);
+    printf("========\n");
+    printIntArray(dataset6, size);
+    insertionSortIntegers(dataset6, size, print);
+    printf("\n");
+    printIntArray(dataset6, size);
+    printf("========\n");
+    printIntArray(dataset7, 0);
+    insertionSortIntegers(dataset7, 0, print);
+    printf("\n");
+    printIntArray(dataset7, 0);
+    printf("========\n");
 
     // make sure to add your own tests, such what happens when the dataset is {}?
 
